@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.web.WebView?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="554.0" prefWidth="764.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.NationalChemViewController">
+   <children>
+      <Button fx:id="videos" layoutX="257.0" layoutY="17.0" mnemonicParsing="false" onAction="#handleVideos" prefHeight="25.0" prefWidth="61.0" text="Learn" />
+      <Label layoutX="331.0" layoutY="20.0" text="Practice:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="choicePicker" layoutX="382.0" layoutY="17.0" onMouseClicked="#handlePracticeC" prefWidth="150.0" />
+      <WebView fx:id="myWebView" layoutX="6.0" layoutY="56.0" prefHeight="491.0" prefWidth="754.0" />
+   </children>
+</AnchorPane>
