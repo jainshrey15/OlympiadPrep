@@ -24,7 +24,7 @@ public class Main extends Application {
 		private Stage primaryStage;
 		//private field of the root layout of our main window
 		private AnchorPane rootLayout;
-		
+		//shreyis dumb
 		//creates a static object of the item class with a specific input of F=ma 2016
 		static Item fma1 = new Item("F=ma 2016");
 		//creates a static object of the item class with a specific input of F=ma 2016 Solutions
