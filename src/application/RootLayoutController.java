@@ -19,12 +19,15 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.scene.control.Tooltip;
 import javafx.scene.shape.CubicCurveTo;
+import javafx.scene.shape.LineTo;
 import javafx.scene.shape.MoveTo;
 import javafx.scene.shape.Path;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 import javafx.util.Duration;
+import application.PhysicsViewController;
 
 public class RootLayoutController {
 	
@@ -37,10 +40,12 @@ public class RootLayoutController {
 	private Button chemistry;//creates a button called chemistry
 	@FXML
 	private Button math;//creates a button called math
+	@FXML
+	private Button citations;//creates a button called citations
 	
 	//button to enter the name to the next view
 	@FXML
-	private Button btn1;//creates a button which will be assigned to the COntinue button in fxml
+	private Button btn1;//creates a button which will be assigned to the Continue button in fxml
 	@FXML
 	private Button btn2;//creates a button which will be assigned to the Surprise button in fxml
 	
@@ -74,11 +79,9 @@ this.physicsViewApp = physicsViewApp;
 		//creates a new path
 		Path path = new Path();
 		//sets the initial position of the object
-		path.getElements().add(new MoveTo(20,20));
-		//adds a curve motion and sets its starting point
-		path.getElements().add(new CubicCurveTo(380, 0, 380, 120, 200, 120));
-		//sets the final position of the object on the curve motion
-		path.getElements().add(new CubicCurveTo(0, 120, 0, 240, 380, 240));
+		 MoveTo start = new MoveTo();
+		 path.getElements().add(start);
+		path.getElements().add(new LineTo(370,0));
 		//creates a path transition
 		PathTransition pathTransition = new PathTransition();
 		//sets the duration of the motion
@@ -150,6 +153,7 @@ this.physicsViewApp = physicsViewApp;
 	  stage.initModality(Modality.APPLICATION_MODAL);//initializing the modality
 	  stage.initOwner(physics.getScene().getWindow());//open the new view in a new window
 	  stage.showAndWait();
+	  	
 	}
 	
 
@@ -199,19 +203,30 @@ this.physicsViewApp = physicsViewApp;
 	
 
 	}
-		
-	@FXML
-	private TextField textField;
 	
-	//getter and setter for the text field
-	public TextField getTextField() {
-		return textField;
-	}
+	//method to open a new view when the button called See Citations is clicked
+		@FXML
+		private void handleCitations(ActionEvent event) 
+		                         throws IOException {
 
+		//new stage and root
+		Stage stage; 
+		Parent root;
 
-	public void setTextField(TextField textField) {
-		this.textField = textField;
-	}
+		//if the button See Citations is clicked
+		if(event.getSource()==citations)
+		{
+		  stage = new Stage();
+		  root = FXMLLoader.load(getClass().getResource("CitationsLayout.fxml"));//open the citations layout fxml
+		  stage.setScene(new Scene(root));
+		  stage.setTitle("Citations");//sets the title
+		  stage.initModality(Modality.APPLICATION_MODAL);//initializing the modality
+		  stage.initOwner(citations.getScene().getWindow());//open the new view in a new window
+		  stage.showAndWait();
+		}
+		
+
+		}
 
 }
 	

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ChoiceBox?>
 <?import javafx.scene.control.Label?>
@@ -7,10 +8,13 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.web.WebView?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="591.0" prefWidth="744.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.LocalChemViewController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="591.0" prefWidth="744.0" style="-fx-background-color: orange;" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.LocalChemViewController">
    <children>
-      <Button fx:id="videos" layoutX="246.0" layoutY="13.0" mnemonicParsing="false" onAction="#handleVideos" prefHeight="25.0" prefWidth="59.0" text="Learn" />
-      <ChoiceBox fx:id="choicePicker" layoutX="372.0" layoutY="13.0" onMouseClicked="#handlePracticeC" prefWidth="150.0" />
+      <Button fx:id="videos" layoutX="246.0" layoutY="13.0" mnemonicParsing="false" onAction="#handleVideos" prefHeight="25.0" prefWidth="59.0" text="Learn">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <ChoiceBox fx:id="choicePicker" layoutX="372.0" layoutY="13.0" prefWidth="150.0" />
       <WebView fx:id="myWebView" layoutX="4.0" layoutY="40.0" prefHeight="547.0" prefWidth="735.0" />
       <Label layoutX="320.0" layoutY="16.0" text="Practice:">
          <font>

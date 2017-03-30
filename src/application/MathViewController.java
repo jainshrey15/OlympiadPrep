@@ -27,6 +27,7 @@ import javafx.util.Callback;
 
 public class MathViewController {
 	
+	//buttons for the fxml file
 	@FXML
 	private Button amc;
 	@FXML
@@ -36,6 +37,11 @@ public class MathViewController {
 	
 	
 	//method to open a new view when the button called amc is clicked
+	/*
+	 @param
+	 @exception
+	 @return
+	 */
 	@FXML
 	private void handleAMC(ActionEvent event) 
 	                         throws IOException {
@@ -54,6 +60,13 @@ public class MathViewController {
 	  stage.showAndWait();
 	}
 	}
+	
+	//method to open the AIME view when the button called AIME is clicked
+	/*
+	 @param
+	 @exception
+	 @return
+	 */
 	@FXML
 	private void handleAIME(ActionEvent event) 
 	                         throws IOException {
@@ -72,6 +85,12 @@ public class MathViewController {
 	}
 	}
 	
+	//method to open the USAMO view when the button called USAMO is clicked
+	/*
+	 @param
+	 @exception
+	 @return
+	 */
 	@FXML
 	private void handleUSAMO(ActionEvent event) 
 	                         throws IOException {

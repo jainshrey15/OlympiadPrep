@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="312.0" prefWidth="600.0" style="-fx-background-color: orange;" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TextArea layoutX="31.0" layoutY="48.0" prefHeight="232.0" prefWidth="539.0" text="1) https://www.aapt.org/physicsteam/2017/exams.cfm&#10;2) https://www.youtube.com/channel/UCsvEpjiiFhPb5zwQuS9cRRg&#10;3) https://www.quora.com/&#10;4) https://www.youtube.com/user/LordSamukai&#10;5) https://www.acs.org/content/acs/en/education/students/highschool/olympiad/pastexams.html&#10;6) https://www.youtube.com/channel/UCdwTtodP-9WuIhvib6gcAHA/featured&#10;7) https://www.youtube.com/channel/UCuLNteVHHLlaG69Tpn93r9w&#10;8) https://artofproblemsolving.com/&#10;9) https://www.youtube.com/user/ArtofProblemSolving&#10;10) https://www.youtube.com/channel/UC7KSSynUiuMhsDVf9tS8qtQ&#10;11) https://www.youtube.com/user/CyclicSquares/featured&#10;12) https://www.youtube.com/user/osmannal/featured&#10;&#10;&#10;&#10;&#10;&#10;" />
+      <Label layoutX="268.0" layoutY="21.0" prefHeight="17.0" prefWidth="82.0" text="Citations">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+   </children>
+</AnchorPane>

@@ -13,19 +13,18 @@ import javafx.stage.Stage;
 
 public class ChemistryViewController {
 
-	
+	//buttons for the fxml file
 	@FXML
 	private Button lco;
 	@FXML
 	private Button nco;
 	
-	
-  	
-	
-	
-	
-	
-	
+	//method to open the Local Chem View when the button called LCO is clicked
+	/*
+	 @param
+	 @exception
+	 @return
+	 */
 	@FXML
 	private void handleLCO(ActionEvent event) 
 	                         throws IOException {
@@ -50,7 +49,12 @@ public class ChemistryViewController {
       
       
     
-  	//method to open a new view when the button called usapho is clicked
+  	//method to open a new view when the button called NCO is clicked
+	/*
+	 @param
+	 @exception
+	 @return
+	 */
   	@FXML
 	private void handleNCO(ActionEvent event) 
 	                         throws IOException {

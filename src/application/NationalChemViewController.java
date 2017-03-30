@@ -11,15 +11,17 @@ import javafx.scene.web.WebView;
 
 public class NationalChemViewController {
 	
-	
+	//creates a web view
 	@FXML
 	private WebView myWebView;
+	//creates button for the fxml file
 	@FXML
 	private Button videos;
-	
+	//creates a choice box for the fxml file
 	@FXML
 	private ChoiceBox<String> choicePicker;
 	
+	//creates a variable that is used to reference to the main class
 	private Main mainApp;
 	
 	//Constructor that is empty
@@ -27,19 +29,29 @@ public class NationalChemViewController {
 			//This is REQUIRED even if it has no commands.  The LOADER looks for this first, then will call initialize ONLY if initialize is decorated with @FXML
 	}
 	
+	
+	//method which inputs choices into the choice box when the user clicks on the choice box
+	/*
+	 @param
+	 @exception
+	 @return
+	 */
 	@FXML
-	private void handlePracticeC(){
+	private void initialize(){
 		choicePicker.setItems(FXCollections.observableArrayList(
-			    "NCO 2016 Part I", "NCO 2016 Part II", "NCO 2016 Part III", "NCO 2015 Part I", 
-			    "NCO 2015 Part II", "NCO 2015 Part III", "NCO 2014 Part I", "NCO 2014 Part II", 
-			    "NCO 2014 Part III", "NCO 2013 Part I", "NCO 2013 Part II", "NCO 2013 Part III")
+				//sets the options into the choice box
+				Main.nco1.getItemName(), Main.nco2.getItemName(), Main.nco3.getItemName(), Main.nco4.getItemName(), 
+			    Main.nco5.getItemName(), Main.nco6.getItemName(), Main.nco7.getItemName(), Main.nco8.getItemName(), 
+			    Main.nco9.getItemName(), Main.nco10.getItemName(), Main.nco11.getItemName(), Main.nco12.getItemName())
 			);
 		
-		
+		//creates an index for the options in the choice box and adds an event listener
 		choicePicker.getSelectionModel().selectedIndexProperty().addListener(new ChangeListener<Number>() {
-		      @Override
+		      
+			//loads the corresponding pdf file in a web view for the option selected
+			  @Override
 		      public void changed(ObservableValue<? extends Number> observableValue, Number number, Number number2) {
-		        
+				  //the options selected is switched
 		    	  switch (choicePicker.getItems().get((Integer) number2)) {
 		    	  			    	
 		    	  case "NCO 2016 Part I" :  {
@@ -108,6 +120,12 @@ public class NationalChemViewController {
 		    });
 	}
 	
+	//loads the webpage in a web view when the Learn button is clicked
+	/*
+	 @param
+	 @exception
+	 @return
+	 */
 	@FXML
 	private void handleVideos() {
 		WebEngine webEngine = myWebView.getEngine();
@@ -115,7 +133,11 @@ public class NationalChemViewController {
 	}
 	
 	
-	
+	/*
+	 @param
+	 @exception
+	 @return
+	 */
 	public void setMainApp(Main mainApp) {
     	
 		//This sets the field for this controller to the application passed in:  

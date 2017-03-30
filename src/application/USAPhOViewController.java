@@ -11,17 +11,21 @@ import javafx.scene.web.WebView;
 
 public class USAPhOViewController {
 		
-		
+	//creates a web view
 	@FXML
 	private WebView myWebView;
 	
+	//creates buttons for the fxml file
 	@FXML
 	private Button strategies;
 	@FXML
 	private Button videos;
+	
+	//creates a choice box for the fxml file
 	@FXML
 	private ChoiceBox<String> choicePicker;
 	
+	//creates a variable that is used to reference to the main class
 	private Main mainApp;
 	
 	//Constructor that is empty
@@ -29,18 +33,27 @@ public class USAPhOViewController {
 			//This is REQUIRED even if it has no commands.  The LOADER looks for this first, then will call initialize ONLY if initialize is decorated with @FXML
 	}
 	
+	//method which inputs choices into the choice box when the user clicks on the choice box
+	/*
+	 @param
+	 @exception
+	 @return
+	 */
 	@FXML
-	private void handlePracticeC(){
+	private void initialize(){
 		choicePicker.setItems(FXCollections.observableArrayList(
-			    "USAPhO 2016", "USAPhO 2016 Solutions", "USAPhO 2015", "USAPhO 2015 Solutions", 
-			    "USAPhO 2014", "USAPhO 2014 Solutions", "USAPhO 2013", "USAPhO 2013 Solutions", 
-			    "USAPhO 2012", "USAPhO 2012 Solutions", "USAPhO 2011", "USAPhO 2011 Solutions", 
-			    "USAPhO 2010", "USAPhO 2010 Solutions")
+				//sets the items into the choice box
+				 Main.usapho1.getItemName(), Main.usapho2.getItemName(), Main.usapho3.getItemName(), Main.usapho4.getItemName(), 
+				    Main.usapho5.getItemName(), Main.usapho6.getItemName(), Main.usapho7.getItemName(), Main.usapho8.getItemName(), 
+				    Main.usapho9.getItemName(), Main.usapho10.getItemName(), Main.usapho11.getItemName(), Main.usapho12.getItemName(), 
+				    Main.usapho13.getItemName(), Main.usapho14.getItemName())
 			);
 		
-		
+		//creates an index for the options in the choice box and adds an event listener
 		choicePicker.getSelectionModel().selectedIndexProperty().addListener(new ChangeListener<Number>() {
-		      @Override
+		     
+			//loads the corresponding webpage for the option selected
+			  @Override
 		      public void changed(ObservableValue<? extends Number> observableValue, Number number, Number number2) {
 		        
 		    	  switch (choicePicker.getItems().get((Integer) number2)) {
@@ -125,20 +138,35 @@ public class USAPhOViewController {
 	}
 			
 	
-	
+	//loads the webpage in a web view when the Strategy button is clicked
+	/*
+	 @param
+	 @exception
+	 @return
+	 */
 	@FXML
 	private void handleStrategy() {
 		WebEngine webEngine = myWebView.getEngine();
 		webEngine.load("https://www.quora.com/Im-a-high-school-junior-who-got-a-19-on-the-F-Ma-and-passed-onto-the-semifinal-round-this-year-I-want-to-spend-all-of-this-summer-studying-so-that-I-can-get-an-honorable-mention-in-the-USAPhO-How-many-hours-should-I-study-throughout-the-summer-each-day");			
 	}
 	
+	//loads the webpage in a web view when the Learn button is clicked
+	/*
+	 @param
+	 @exception
+	 @return
+	 */
 	@FXML
 	private void handleVideos() {
 		WebEngine webEngine = myWebView.getEngine();
 		webEngine.load("https://www.youtube.com/playlist?list=PLskOoff9hfsZHm2oZfmQFgpuQ3oWLgp0M");			
 	}
 	
-	
+	/*
+	 @param
+	 @exception
+	 @return
+	 */
 	public void setMainApp(Main mainApp) {
     	
 		//This sets the field for this controller to the application passed in:  

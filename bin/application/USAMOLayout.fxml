@@ -1,18 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ButtonBar?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.web.WebView?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="498.0" prefWidth="629.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.USAMOViewController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="498.0" prefWidth="629.0" style="-fx-background-color: orange;" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.USAMOViewController">
    <children>
       <ButtonBar layoutX="164.0" layoutY="14.0" prefHeight="40.0" prefWidth="268.0">
         <buttons>
-          <Button fx:id="practiceTests" mnemonicParsing="false" onAction="#handlePractice" text="Practice" />
-            <Button fx:id="videos" mnemonicParsing="false" onAction="#handleVideos" text="Learn" />
-            <Button fx:id="strategies" mnemonicParsing="false" onAction="#handleStrategy" text="Strategize" />
+          <Button fx:id="practiceTests" mnemonicParsing="false" onAction="#handlePractice" text="Practice">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button fx:id="videos" mnemonicParsing="false" onAction="#handleVideos" text="Learn">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button fx:id="strategies" mnemonicParsing="false" onAction="#handleStrategy" text="Strategize">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
         </buttons>
       </ButtonBar>
       <WebView fx:id="myWebView" layoutX="5.0" layoutY="52.0" prefHeight="440.0" prefWidth="619.0" />

@@ -11,14 +11,19 @@ import javafx.scene.web.WebView;
 
 public class LocalChemViewController {
 
+	//creates a web view
 	@FXML
 	private WebView myWebView;
+	
+	//button for the fxml file
 	@FXML
 	private Button videos;
 	
+	//creates a choice box for the view
 	@FXML
 	private ChoiceBox<String> choicePicker;
 	
+	//creates a variable that is used to reference to the main class
 	private Main mainApp;
 	
 	//Constructor that is empty
@@ -26,19 +31,28 @@ public class LocalChemViewController {
 			//This is REQUIRED even if it has no commands.  The LOADER looks for this first, then will call initialize ONLY if initialize is decorated with @FXML
 	}
 	
+	//method which inputs choices into the choice box when the user clicks on the choice box
+	/*
+	 @param
+	 @exception
+	 @return
+	 */
 	@FXML
-	private void handlePracticeC(){
+	private void initialize(){
+		//sets the options into the choice box
 		choicePicker.setItems(FXCollections.observableArrayList(
-			    "LCO 2016", "LCO 2015", "LCO 2014", "LCO 2013", 
-			    "LCO 2012", "LCO 2011", "LCO 2010", "LCO 2009", 
-			    "LCO 2008", "LCO 2007")
+				Main.lco1.getItemName(), Main.lco2.getItemName(), Main.lco3.getItemName(), Main.lco4.getItemName(), 
+			    Main.lco5.getItemName(), Main.lco6.getItemName(), Main.lco4.getItemName(), Main.lco8.getItemName(), 
+			    Main.lco9.getItemName(), Main.lco10.getItemName())
 			);
 		
-		
+		//creates an index for the options in the choice box and adds an event listener
 		choicePicker.getSelectionModel().selectedIndexProperty().addListener(new ChangeListener<Number>() {
-		      @Override
+		    
+			//loads the corresponding pdf file in a web view for the option selected
+			  @Override
 		      public void changed(ObservableValue<? extends Number> observableValue, Number number, Number number2) {
-		        
+				//the options selected is switched
 		    	  switch (choicePicker.getItems().get((Integer) number2)) {
 		    	  			    	
 		    	  case "LCO 2016" :  {
@@ -97,6 +111,12 @@ public class LocalChemViewController {
 		    });
 	}
 	
+	//loads the webpage in a web view when the Learn button is clicked
+	/*
+	 @param
+	 @exception
+	 @return
+	 */
 	@FXML
 	private void handleVideos() {
 		WebEngine webEngine = myWebView.getEngine();
@@ -104,7 +124,11 @@ public class LocalChemViewController {
 	}
 	
 	
-	
+	/*
+	 @param
+	 @exception
+	 @return
+	 */
 	public void setMainApp(Main mainApp) {
     	
 		//This sets the field for this controller to the application passed in:  

@@ -26,19 +26,22 @@ import application.Item;
 
 public class FmaViewController {
 	
-	
+	//creates a web view
 	@FXML
 	private WebView myWebView;
 	
+	//creates buttons for the fxml file
 	@FXML
 	private Button practiceTests;
 	@FXML
 	private Button videos;
 	@FXML
 	private Button strategies;
+	//creates a choice box for the fxml file
 	@FXML
 	private ChoiceBox<String> choicePicker;
 	
+	//creates a variable that is used to reference to the main class
 	private Main mainApp;
 	
 	//Constructor that is empty
@@ -46,20 +49,38 @@ public class FmaViewController {
 			//This is REQUIRED even if it has no commands.  The LOADER looks for this first, then will call initialize ONLY if initialize is decorated with @FXML
 	}
 	
+	//method which inputs choices into the choice box when the user clicks on the choice box
+	/*
+	 @param
+	 @exception
+	 @return
+	 */
+	volatile boolean shutdown = false;
+
 	@FXML
-	private void handlePracticeC(){
+	private void shutdown() {
+	   shutdown = true;
+	}
+
+	   
+	@FXML
+	private void initialize(){
+		
 		choicePicker.setItems(FXCollections.observableArrayList(
+				//inputs the static objects of the Item class created into the choice box
 			    Main.fma1.getItemName(), Main.fma2.getItemName(), Main.fma3.getItemName(), Main.fma4.getItemName(), 
 			    Main.fma5.getItemName(), Main.fma6.getItemName(), Main.fma7.getItemName(), Main.fma8.getItemName(), 
 			    Main.fma9.getItemName(), Main.fma10.getItemName(), Main.fma11.getItemName(), Main.fma12.getItemName(), 
 			    Main.fma13.getItemName(), Main.fma14.getItemName())
 			);
 		
-		
+		//creates an index for the options in the choice box and adds an event listener
 		choicePicker.getSelectionModel().selectedIndexProperty().addListener(new ChangeListener<Number>() {
-		      @Override
+		      
+			//loads the corresponding pdf file in a web view for the option selected
+			  @Override
 		      public void changed(ObservableValue<? extends Number> observableValue, Number number, Number number2) {
-		        
+			        //the options selected is switched
 		    	  switch (choicePicker.getItems().get((Integer) number2)) {
 		    	  			    	
 		    	  case "F=ma 2016" :  {
@@ -72,7 +93,6 @@ public class FmaViewController {
 		    			webEngine.load("http://docs.google.com/gview?embedded=true&url=https://www.aapt.org/physicsteam/2016/upload/exam1-2016-3-1-solutions.pdf");	
 		    	  				break;
 		    	  			 }
-		    	 
 		    	 
 		    	  case "F=ma 2015" :  {
 		    		  WebEngine webEngine = myWebView.getEngine();
@@ -140,13 +160,26 @@ public class FmaViewController {
 		      }
 		    });
 	}
-			
+	
+	//method which opens a webpage in a web view when the button called Learn is clicked
+	/*
+	 @param
+	 @exception
+	 @return
+	 */
 	@FXML
 	private void handleVideos(){
+		
 		WebEngine webEngine = myWebView.getEngine();
 		webEngine.load("https://www.youtube.com/playlist?list=PLFozXTdFY8TgViSYd9dF2ZNwLzPFxTtp4");			
 	}
 	
+	//method which opens a webpage in a web view when the button called Strategize is clicked
+	/*
+	 @param
+	 @exception
+	 @return
+	 */
 	@FXML
 	private void handleStrategy() {
 		WebEngine webEngine = myWebView.getEngine();

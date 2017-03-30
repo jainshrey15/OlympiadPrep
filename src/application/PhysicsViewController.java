@@ -21,7 +21,8 @@ import javafx.scene.Parent;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.TableColumn;
 	import javafx.scene.control.TableView;
-	import javafx.stage.Modality;
+import javafx.scene.control.Tooltip;
+import javafx.stage.Modality;
 import javafx.stage.Screen;
 import javafx.stage.Stage;
 
@@ -54,17 +55,19 @@ import javafx.scene.control.TableView;
 		private Button usapho;
 		
 		
-	  	
 		
 		
-		
-		
-		
+		//method to open the F=ma view when the button called F=ma is clicked
+		/*
+		 @param
+		 @exception
+		 @return
+		 */
 		@FXML
 		private void handleFma(ActionEvent event) 
 		                         throws IOException {
 		
-	  		
+		
 	  	//new stage and root
 		Stage stage; 
 		Parent root;
@@ -84,7 +87,36 @@ import javafx.scene.control.TableView;
 	      
 	      
 	    
-	  	//method to open a new view when the button called usapho is clicked
+	  	public Button getFma() {
+			return fma;
+		}
+
+
+
+		public void setFma(Button fma) {
+			this.fma = fma;
+		}
+
+
+
+		public Button getUsapho() {
+			return usapho;
+		}
+
+
+
+		public void setUsapho(Button usapho) {
+			this.usapho = usapho;
+		}
+
+
+
+		//method to open a new view when the button called usapho is clicked
+		/*
+		 @param
+		 @exception
+		 @return
+		 */
 	  	@FXML
 		private void handleUsapho(ActionEvent event) 
 		                         throws IOException {
