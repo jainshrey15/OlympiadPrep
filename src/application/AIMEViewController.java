@@ -35,24 +35,28 @@ public class AIMEViewController {
 	}
 	
 	//method which opens a webpage in a web view when the button called Practice is clicked
-	//@param
-	//@exception
-	//@return
 	@FXML
-	private void handlePractice(){
+	/**
+	 * @param
+	 * @exception
+	 * @return
+	 * @see
+	*/
+	public void handlePractice(){
 		WebEngine webEngine = myWebView.getEngine();
 		webEngine.load("https://artofproblemsolving.com/wiki/index.php/AIME_Problems_and_Solutions");			
 	}
 	
 	//method which inputs choices into the choice box when the user clicks on the choice box
 
-	/*
-	 @param
-	 @exception
-	 @return
-	 */
 	@FXML
-	private void initialize(){
+	/**
+	 * @param
+	 * @exception
+	 * @return
+	 * @see
+	*/
+	public void initialize(){
 		
 		//sets the items into the choice box
 		choicePicker.setItems(FXCollections.observableArrayList(
@@ -83,22 +87,19 @@ public class AIMEViewController {
 	}
 	
 	//loads the webpage in a web view when the Strategy button is clicked
-	/*
-	 @param
-	 @exception
-	 @return
-	 */
 	@FXML
-	private void handleStrategy() {
+	/**
+	 * @param
+	 * @exception
+	 * @return
+	 * @see
+	*/
+	public void handleStrategy() {
 		WebEngine webEngine = myWebView.getEngine();
 		webEngine.load("http://artofproblemsolving.com/wiki/index.php/Resources_for_mathematics_competitions#AIME_Preparation");			
 	}
 	
-	/*
-	 @param
-	 @exception
-	 @return
-	 */
+	
 	public void setMainApp(Main mainApp) {
     	
 		//This sets the field for this controller to the application passed in:  

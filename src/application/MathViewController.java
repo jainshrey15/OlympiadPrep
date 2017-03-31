@@ -37,13 +37,13 @@ public class MathViewController {
 	
 	
 	//method to open a new view when the button called amc is clicked
-	/*
-	 @param
-	 @exception
-	 @return
+	/**
+	* @param
+	* @exception
+	* @return
 	 */
 	@FXML
-	private void handleAMC(ActionEvent event) 
+	public void handleAMC(ActionEvent event) 
 	                         throws IOException {
 	//new stage and root
 	Stage stage; 
@@ -62,13 +62,13 @@ public class MathViewController {
 	}
 	
 	//method to open the AIME view when the button called AIME is clicked
-	/*
-	 @param
-	 @exception
-	 @return
+	/**
+	* @param
+	* @exception
+	* @return
 	 */
 	@FXML
-	private void handleAIME(ActionEvent event) 
+	public void handleAIME(ActionEvent event) 
 	                         throws IOException {
 	//new stage and root
 	Stage stage; 
@@ -86,13 +86,13 @@ public class MathViewController {
 	}
 	
 	//method to open the USAMO view when the button called USAMO is clicked
-	/*
-	 @param
-	 @exception
-	 @return
+	/**
+	* @param
+	* @exception
+	* @return
 	 */
 	@FXML
-	private void handleUSAMO(ActionEvent event) 
+	public void handleUSAMO(ActionEvent event) 
 	                         throws IOException {
 	//new stage and root
 	Stage stage; 

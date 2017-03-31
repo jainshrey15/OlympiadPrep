@@ -32,37 +32,37 @@ public class USAMOViewController {
 	}
 	
 	//method which opens a webpage in a web view when the button called Practice is clicked
-	/*
-	 @param
-	 @exception
-	 @return
+	/**
+	* @param
+	* @exception
+	* @return
 	 */
 	@FXML
-	private void handlePractice(){
+	public void handlePractice(){
 		WebEngine webEngine = myWebView.getEngine();
 		webEngine.load("https://artofproblemsolving.com/wiki/index.php/USAMO_Problems_and_Solutions");			
 	}
 	
 	//method which opens a webpage in a web view when the button called Learn is clicked
-	/*
-	 @param
-	 @exception
-	 @return
+	/**
+	* @param
+	* @exception
+	* @return
 	 */
 	@FXML
-	private void handleVideos() {
+	public void handleVideos() {
 		WebEngine webEngine = myWebView.getEngine();
 		webEngine.load("https://www.youtube.com/playlist?list=PLa8j0YHOYQQIpg8wQ-_uyD22iuJeBFq-H");			
 	}
 	
 	//method which opens a webpage in a web view when the button called Strategize is clicked
-	/*
-	 @param
-	 @exception
-	 @return
+	/**
+	* @param
+	* @exception
+	* @return
 	 */
 	@FXML
-	private void handleStrategy() {
+	public void handleStrategy() {
 		WebEngine webEngine = myWebView.getEngine();
 		webEngine.load("http://artofproblemsolving.com/wiki/index.php/Resources_for_mathematics_competitions#Beginning_Olympiad_Preparation");			
 	}

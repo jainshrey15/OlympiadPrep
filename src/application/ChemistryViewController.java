@@ -20,13 +20,14 @@ public class ChemistryViewController {
 	private Button nco;
 	
 	//method to open the Local Chem View when the button called LCO is clicked
-	/*
-	 @param
-	 @exception
-	 @return
-	 */
+	/**
+	 * @param
+	 * @exception
+	 * @return
+	 * @see
+	*/
 	@FXML
-	private void handleLCO(ActionEvent event) 
+	public void handleLCO(ActionEvent event) 
 	                         throws IOException {
 	
   		
@@ -50,13 +51,14 @@ public class ChemistryViewController {
       
     
   	//method to open a new view when the button called NCO is clicked
-	/*
-	 @param
-	 @exception
-	 @return
-	 */
+	/**
+	 * @param
+	 * @exception
+	 * @return
+	 * @see
+	*/
   	@FXML
-	private void handleNCO(ActionEvent event) 
+	public void handleNCO(ActionEvent event) 
 	                         throws IOException {
 	
   		

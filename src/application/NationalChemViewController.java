@@ -31,13 +31,13 @@ public class NationalChemViewController {
 	
 	
 	//method which inputs choices into the choice box when the user clicks on the choice box
-	/*
-	 @param
-	 @exception
-	 @return
+	/**
+	* @param
+	* @exception
+	* @return
 	 */
 	@FXML
-	private void initialize(){
+	public void initialize(){
 		choicePicker.setItems(FXCollections.observableArrayList(
 				//sets the options into the choice box
 				Main.nco1.getItemName(), Main.nco2.getItemName(), Main.nco3.getItemName(), Main.nco4.getItemName(), 
@@ -121,13 +121,13 @@ public class NationalChemViewController {
 	}
 	
 	//loads the webpage in a web view when the Learn button is clicked
-	/*
-	 @param
-	 @exception
-	 @return
+	/**
+	* @param
+	* @exception
+	* @return
 	 */
 	@FXML
-	private void handleVideos() {
+	public void handleVideos() {
 		WebEngine webEngine = myWebView.getEngine();
 		webEngine.load("https://youtu.be/1Vn1Y-CwG60?t=1");			
 	}

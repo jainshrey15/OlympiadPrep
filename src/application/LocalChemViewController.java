@@ -32,13 +32,13 @@ public class LocalChemViewController {
 	}
 	
 	//method which inputs choices into the choice box when the user clicks on the choice box
-	/*
-	 @param
-	 @exception
-	 @return
+	/**
+	* @param
+	* @exception
+	* @return
 	 */
 	@FXML
-	private void initialize(){
+	public void initialize(){
 		//sets the options into the choice box
 		choicePicker.setItems(FXCollections.observableArrayList(
 				Main.lco1.getItemName(), Main.lco2.getItemName(), Main.lco3.getItemName(), Main.lco4.getItemName(), 
@@ -112,13 +112,13 @@ public class LocalChemViewController {
 	}
 	
 	//loads the webpage in a web view when the Learn button is clicked
-	/*
-	 @param
-	 @exception
-	 @return
+	/**
+	* @param
+	* @exception
+	* @return
 	 */
 	@FXML
-	private void handleVideos() {
+	public void handleVideos() {
 		WebEngine webEngine = myWebView.getEngine();
 		webEngine.load("https://www.youtube.com/playlist?list=PLVqkjsKI25jyqiW-GtjnpVv5BtYy1aRB_");			
 	}

@@ -50,21 +50,14 @@ public class FmaViewController {
 	}
 	
 	//method which inputs choices into the choice box when the user clicks on the choice box
-	/*
-	 @param
-	 @exception
-	 @return
-	 */
-	volatile boolean shutdown = false;
-
+	/**
+	 * @param
+	 * @exception
+	 * @return
+	 * @see
+	*/
 	@FXML
-	private void shutdown() {
-	   shutdown = true;
-	}
-
-	   
-	@FXML
-	private void initialize(){
+	public void initialize(){
 		
 		choicePicker.setItems(FXCollections.observableArrayList(
 				//inputs the static objects of the Item class created into the choice box
@@ -162,26 +155,28 @@ public class FmaViewController {
 	}
 	
 	//method which opens a webpage in a web view when the button called Learn is clicked
-	/*
-	 @param
-	 @exception
-	 @return
-	 */
+	/**
+	 * @param
+	 * @exception
+	 * @return
+	 * @see
+	*/
 	@FXML
-	private void handleVideos(){
+	public void handleVideos(){
 		
 		WebEngine webEngine = myWebView.getEngine();
 		webEngine.load("https://www.youtube.com/playlist?list=PLFozXTdFY8TgViSYd9dF2ZNwLzPFxTtp4");			
 	}
 	
 	//method which opens a webpage in a web view when the button called Strategize is clicked
-	/*
-	 @param
-	 @exception
-	 @return
-	 */
+	/**
+	 * @param
+	 * @exception
+	 * @return
+	 * @see
+	*/
 	@FXML
-	private void handleStrategy() {
+	public void handleStrategy() {
 		WebEngine webEngine = myWebView.getEngine();
 		webEngine.load("https://www.quora.com/What-books-resources-should-I-use-to-prepare-for-the-initial-f-ma-Physics-Olympiad-exam");			
 	}

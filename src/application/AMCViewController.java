@@ -36,25 +36,27 @@ public class AMCViewController {
 	}
 	
 	//method to open a web page when the Practice button is clicked
-	/*
-	 @param
-	 @exception
-	 @return
-	 */
+	/**
+	 * @param
+	 * @exception
+	 * @return
+	 * @see
+	*/
 	@FXML
-	private void handlePractice(){
+	public void handlePractice(){
 		WebEngine webEngine = myWebView.getEngine();
 		webEngine.load("https://artofproblemsolving.com/wiki/index.php/AMC_12_Problems_and_Solutions");			
 	}
 	
 	//method which inputs choices into the choice box when the user clicks on the choice box
-	/*
-	 @param
-	 @exception
-	 @return
-	 */
+	/**
+	 * @param
+	 * @exception
+	 * @return
+	 * @see
+	*/
 	@FXML
-	private void initialize(){
+	public void initialize(){
 		choicePicker.setItems(FXCollections.observableArrayList(  Main.amc1.getItemName(), Main.amc2.getItemName()));//sets the items into the choice box
 		
 		//creates an index for the options in the choice box and adds an event listener
@@ -82,13 +84,14 @@ public class AMCViewController {
 	}
 	
 	//loads the webpage in a web view when the Strategy button is clicked
-	/*
-	 @param
-	 @exception
-	 @return
-	 */
+	/**
+	 * @param
+	 * @exception
+	 * @return
+	 * @see
+	*/
 	@FXML
-	private void handleStrategy() {
+	public void handleStrategy() {
 		WebEngine webEngine = myWebView.getEngine();
 		webEngine.load("http://artofproblemsolving.com/wiki/index.php/How_should_I_prepare%3F");			
 	}

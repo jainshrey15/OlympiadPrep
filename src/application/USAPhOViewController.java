@@ -34,13 +34,13 @@ public class USAPhOViewController {
 	}
 	
 	//method which inputs choices into the choice box when the user clicks on the choice box
-	/*
-	 @param
-	 @exception
-	 @return
+	/**
+	* @param
+	* @exception
+	* @return
 	 */
 	@FXML
-	private void initialize(){
+	public void initialize(){
 		choicePicker.setItems(FXCollections.observableArrayList(
 				//sets the items into the choice box
 				 Main.usapho1.getItemName(), Main.usapho2.getItemName(), Main.usapho3.getItemName(), Main.usapho4.getItemName(), 
@@ -139,25 +139,26 @@ public class USAPhOViewController {
 			
 	
 	//loads the webpage in a web view when the Strategy button is clicked
-	/*
-	 @param
-	 @exception
-	 @return
+	/**
+	* @param
+	* @exception
+	* @return
+	* I amDumb
 	 */
 	@FXML
-	private void handleStrategy() {
+	public void handleStrategy() {
 		WebEngine webEngine = myWebView.getEngine();
 		webEngine.load("https://www.quora.com/Im-a-high-school-junior-who-got-a-19-on-the-F-Ma-and-passed-onto-the-semifinal-round-this-year-I-want-to-spend-all-of-this-summer-studying-so-that-I-can-get-an-honorable-mention-in-the-USAPhO-How-many-hours-should-I-study-throughout-the-summer-each-day");			
 	}
 	
 	//loads the webpage in a web view when the Learn button is clicked
-	/*
-	 @param
-	 @exception
-	 @return
+	/**
+	* @param
+	* @exception
+	* @return
 	 */
 	@FXML
-	private void handleVideos() {
+	public void handleVideos() {
 		WebEngine webEngine = myWebView.getEngine();
 		webEngine.load("https://www.youtube.com/playlist?list=PLskOoff9hfsZHm2oZfmQFgpuQ3oWLgp0M");			
 	}

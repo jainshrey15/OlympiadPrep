@@ -73,8 +73,13 @@ this.physicsViewApp = physicsViewApp;
 	}
 
 	//method to create an animation which will display the continue button
+	/**
+	* @param
+	* @exception
+	* @return
+	 */
 	@FXML
-	private void handleContinue(ActionEvent event) throws IOException{
+	public void handleContinue(ActionEvent event) throws IOException{
 		
 		//creates a new path
 		Path path = new Path();
@@ -101,8 +106,13 @@ this.physicsViewApp = physicsViewApp;
 	}
 	
 	//method to open a new view when the continue button is clicked
+	/**
+	* @param
+	* @exception
+	* @return
+	 */
 	@FXML
-	private void handleOpening(ActionEvent event) 
+	public void handleOpening(ActionEvent event) 
 	                         throws IOException {
 
 	//new stage and root
@@ -135,8 +145,13 @@ this.physicsViewApp = physicsViewApp;
 	}
 	
 	//method to open a new view when the button called physics is clicked
+	/**
+	* @param
+	* @exception
+	* @return
+	 */
 	@FXML
-	private void handlePhysics(ActionEvent event) 
+	public void handlePhysics(ActionEvent event) 
 	                         throws IOException {
 
 	//new stage and root
@@ -160,8 +175,13 @@ this.physicsViewApp = physicsViewApp;
 	}
 
 	//method to open a new view when the button called chemistry is clicked
+	/**
+	* @param
+	* @exception
+	* @return
+	 */
 	@FXML
-	private void handleChemistry(ActionEvent event) 
+	public void handleChemistry(ActionEvent event) 
 	                         throws IOException {
 
 	//new stage and root
@@ -205,8 +225,13 @@ this.physicsViewApp = physicsViewApp;
 	}
 	
 	//method to open a new view when the button called See Citations is clicked
+	/**
+	* @param
+	* @exception
+	* @return
+	 */
 		@FXML
-		private void handleCitations(ActionEvent event) 
+		public void handleCitations(ActionEvent event) 
 		                         throws IOException {
 
 		//new stage and root
