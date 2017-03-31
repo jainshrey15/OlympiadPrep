@@ -35,13 +35,13 @@ public class AIMEViewController {
 	}
 	
 	//method which opens a webpage in a web view when the button called Practice is clicked
-	@FXML
+	
 	/**
-	 * @param
-	 * @exception
-	 * @return
-	 * @see
+	 * @param event
+	 * @exception IO exception
+	 * Loads the practice tests for the AIME
 	*/
+	@FXML
 	public void handlePractice(){
 		WebEngine webEngine = myWebView.getEngine();
 		webEngine.load("https://artofproblemsolving.com/wiki/index.php/AIME_Problems_and_Solutions");			
@@ -49,13 +49,13 @@ public class AIMEViewController {
 	
 	//method which inputs choices into the choice box when the user clicks on the choice box
 
-	@FXML
+	
 	/**
-	 * @param
-	 * @exception
-	 * @return
-	 * @see
+	 * @param event
+	 * @exception IO exception
+	 * Loads the conceptual videos for the AIME exam
 	*/
+	@FXML
 	public void initialize(){
 		
 		//sets the items into the choice box
@@ -87,13 +87,13 @@ public class AIMEViewController {
 	}
 	
 	//loads the webpage in a web view when the Strategy button is clicked
-	@FXML
+	
 	/**
-	 * @param
-	 * @exception
-	 * @return
-	 * @see
+	 * @param event
+	 * @exception IO exception
+	 * Loads the strategies for the AIME
 	*/
+	@FXML
 	public void handleStrategy() {
 		WebEngine webEngine = myWebView.getEngine();
 		webEngine.load("http://artofproblemsolving.com/wiki/index.php/Resources_for_mathematics_competitions#AIME_Preparation");			

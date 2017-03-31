@@ -38,10 +38,10 @@ public class MathViewController {
 	
 	//method to open a new view when the button called amc is clicked
 	/**
-	* @param
-	* @exception
-	* @return
-	 */
+	 * @param event
+	 * @exception IO exception
+	 * Opens the AMC Layout in a new view
+	*/
 	@FXML
 	public void handleAMC(ActionEvent event) 
 	                         throws IOException {
@@ -63,10 +63,10 @@ public class MathViewController {
 	
 	//method to open the AIME view when the button called AIME is clicked
 	/**
-	* @param
-	* @exception
-	* @return
-	 */
+	 * @param event
+	 * @exception IO exception
+	 * Opens the AIME Layout in a new view
+	*/
 	@FXML
 	public void handleAIME(ActionEvent event) 
 	                         throws IOException {
@@ -87,10 +87,10 @@ public class MathViewController {
 	
 	//method to open the USAMO view when the button called USAMO is clicked
 	/**
-	* @param
-	* @exception
-	* @return
-	 */
+	 * @param event
+	 * @exception IO exception
+	 * Opens the USAMO Layout in a new view
+	*/
 	@FXML
 	public void handleUSAMO(ActionEvent event) 
 	                         throws IOException {

@@ -59,10 +59,10 @@ import javafx.scene.control.TableView;
 		
 		//method to open the F=ma view when the button called F=ma is clicked
 		/**
-		* @param
-		* @exception
-		* @return
-		 */
+		 * @param event
+		 * @exception IO exception
+		 * Opens the F=ma Layout in a new view
+		*/
 		@FXML
 		public void handleFma(ActionEvent event) 
 		                         throws IOException {
@@ -113,10 +113,10 @@ import javafx.scene.control.TableView;
 
 		//method to open a new view when the button called usapho is clicked
 		/**
-		* @param
-		* @exception
-		* @return
-		 */
+		 * @param event
+		 * @exception IO exception
+		 * Opens the USAPhO Layout in a new view
+		*/
 	  	@FXML
 		public void handleUsapho(ActionEvent event) 
 		                         throws IOException {

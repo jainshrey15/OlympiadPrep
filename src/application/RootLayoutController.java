@@ -74,10 +74,10 @@ this.physicsViewApp = physicsViewApp;
 
 	//method to create an animation which will display the continue button
 	/**
-	* @param
-	* @exception
-	* @return
-	 */
+	 * @param event
+	 * @exception IO exception
+	 * Creates an animation with the Continue button and plays it when the Surprise button is clicked
+	*/
 	@FXML
 	public void handleContinue(ActionEvent event) throws IOException{
 		
@@ -107,10 +107,10 @@ this.physicsViewApp = physicsViewApp;
 	
 	//method to open a new view when the continue button is clicked
 	/**
-	* @param
-	* @exception
-	* @return
-	 */
+	 * @param event
+	 * @exception IO exception
+	 * Opens the Subjects Layout in a new view
+	*/
 	@FXML
 	public void handleOpening(ActionEvent event) 
 	                         throws IOException {
@@ -146,10 +146,10 @@ this.physicsViewApp = physicsViewApp;
 	
 	//method to open a new view when the button called physics is clicked
 	/**
-	* @param
-	* @exception
-	* @return
-	 */
+	 * @param event
+	 * @exception IO exception
+	 * Opens the Physics Layout in a new view
+	*/
 	@FXML
 	public void handlePhysics(ActionEvent event) 
 	                         throws IOException {
@@ -176,10 +176,10 @@ this.physicsViewApp = physicsViewApp;
 
 	//method to open a new view when the button called chemistry is clicked
 	/**
-	* @param
-	* @exception
-	* @return
-	 */
+	 * @param event
+	 * @exception IO exception
+	 * Opens the Chemistry Layout in a new view
+	*/
 	@FXML
 	public void handleChemistry(ActionEvent event) 
 	                         throws IOException {
@@ -203,6 +203,11 @@ this.physicsViewApp = physicsViewApp;
 	}
 	
 	//method to open a new view when the button called math is clicked
+	/**
+	 * @param event
+	 * @exception IO exception
+	 * Opens the Math Layout in a new view
+	*/
 	@FXML
 	private void handleMath(ActionEvent event) 
 	                         throws IOException {
@@ -226,10 +231,10 @@ this.physicsViewApp = physicsViewApp;
 	
 	//method to open a new view when the button called See Citations is clicked
 	/**
-	* @param
-	* @exception
-	* @return
-	 */
+	 * @param event
+	 * @exception IO exception
+	 * Opens the Citations Layout in a new view
+	*/
 		@FXML
 		public void handleCitations(ActionEvent event) 
 		                         throws IOException {

@@ -35,10 +35,10 @@ public class USAPhOViewController {
 	
 	//method which inputs choices into the choice box when the user clicks on the choice box
 	/**
-	* @param
-	* @exception
-	* @return
-	 */
+	 * @param event
+	 * @exception IO exception
+	 * Sets items into a choice box and loads the practice tests for the USAPhO exam
+	*/
 	@FXML
 	public void initialize(){
 		choicePicker.setItems(FXCollections.observableArrayList(
@@ -140,11 +140,10 @@ public class USAPhOViewController {
 	
 	//loads the webpage in a web view when the Strategy button is clicked
 	/**
-	* @param
-	* @exception
-	* @return
-	* I amDumb
-	 */
+	 * @param event
+	 * @exception IO exception
+	 * Loads the strategies for the USAPhO exam
+	*/
 	@FXML
 	public void handleStrategy() {
 		WebEngine webEngine = myWebView.getEngine();
@@ -153,10 +152,10 @@ public class USAPhOViewController {
 	
 	//loads the webpage in a web view when the Learn button is clicked
 	/**
-	* @param
-	* @exception
-	* @return
-	 */
+	 * @param event
+	 * @exception IO exception
+	 * Loads the conceptual videos for the USAPhO exam
+	*/
 	@FXML
 	public void handleVideos() {
 		WebEngine webEngine = myWebView.getEngine();

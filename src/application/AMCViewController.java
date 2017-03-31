@@ -37,10 +37,9 @@ public class AMCViewController {
 	
 	//method to open a web page when the Practice button is clicked
 	/**
-	 * @param
-	 * @exception
-	 * @return
-	 * @see
+	 * @param event
+	 * @exception IO exception
+	 * Loads the practice tests for the AMC exam
 	*/
 	@FXML
 	public void handlePractice(){
@@ -50,10 +49,9 @@ public class AMCViewController {
 	
 	//method which inputs choices into the choice box when the user clicks on the choice box
 	/**
-	 * @param
-	 * @exception
-	 * @return
-	 * @see
+	 * @param event
+	 * @exception IO exception
+	 * Sets items to a choice box and loads the conceptual videos for the AMC exam
 	*/
 	@FXML
 	public void initialize(){
@@ -85,10 +83,9 @@ public class AMCViewController {
 	
 	//loads the webpage in a web view when the Strategy button is clicked
 	/**
-	 * @param
-	 * @exception
-	 * @return
-	 * @see
+	 * @param event
+	 * @exception IO exception
+	 * Loads the strategies for the AMC exam
 	*/
 	@FXML
 	public void handleStrategy() {

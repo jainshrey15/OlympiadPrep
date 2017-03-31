@@ -33,10 +33,10 @@ public class LocalChemViewController {
 	
 	//method which inputs choices into the choice box when the user clicks on the choice box
 	/**
-	* @param
-	* @exception
-	* @return
-	 */
+	 * @param event
+	 * @exception IO exception
+	 * Sets items to a choice box and loads the practice tests for the LCO exam
+	*/
 	@FXML
 	public void initialize(){
 		//sets the options into the choice box
@@ -113,10 +113,10 @@ public class LocalChemViewController {
 	
 	//loads the webpage in a web view when the Learn button is clicked
 	/**
-	* @param
-	* @exception
-	* @return
-	 */
+	 * @param event
+	 * @exception IO exception
+	 * Loads the conceptual viedos for the LCO exam
+	*/
 	@FXML
 	public void handleVideos() {
 		WebEngine webEngine = myWebView.getEngine();

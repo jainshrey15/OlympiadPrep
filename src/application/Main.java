@@ -95,11 +95,11 @@ public class Main extends Application {
 		
 		
 	//method to open the start view 
-		/*
-		 @param
-		 @exception
-		 @return
-		 */
+		/**
+		 * @param event
+		 * @exception IO exception
+		 * Opens the start view and loads the fxml file into it 
+		*/
 	@Override
 	public void start(Stage primaryStage) {
 		try {
@@ -125,11 +125,11 @@ public class Main extends Application {
 
 	
 	//method to open the first view
-	/*
-	 @param
-	 @exception
-	 @return
-	 */
+	/**
+	 * @param event
+	 * @exception IO exception
+	 * Loads the fxml file into the scene of the start view
+	*/
 	public void initRootLayout() {
 		
 		try {

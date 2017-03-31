@@ -33,10 +33,10 @@ public class USAMOViewController {
 	
 	//method which opens a webpage in a web view when the button called Practice is clicked
 	/**
-	* @param
-	* @exception
-	* @return
-	 */
+	 * @param event
+	 * @exception IO exception
+	 * Loads the practice tests for the USAMO exam
+	*/
 	@FXML
 	public void handlePractice(){
 		WebEngine webEngine = myWebView.getEngine();
@@ -45,10 +45,10 @@ public class USAMOViewController {
 	
 	//method which opens a webpage in a web view when the button called Learn is clicked
 	/**
-	* @param
-	* @exception
-	* @return
-	 */
+	 * @param event
+	 * @exception IO exception
+	 * Loads the conceptual videos for the USAMO exam
+	*/
 	@FXML
 	public void handleVideos() {
 		WebEngine webEngine = myWebView.getEngine();
@@ -57,10 +57,10 @@ public class USAMOViewController {
 	
 	//method which opens a webpage in a web view when the button called Strategize is clicked
 	/**
-	* @param
-	* @exception
-	* @return
-	 */
+	 * @param event
+	 * @exception IO exception
+	 * Loads the strategies for the USAMO exam
+	*/
 	@FXML
 	public void handleStrategy() {
 		WebEngine webEngine = myWebView.getEngine();

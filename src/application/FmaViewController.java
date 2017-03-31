@@ -51,10 +51,9 @@ public class FmaViewController {
 	
 	//method which inputs choices into the choice box when the user clicks on the choice box
 	/**
-	 * @param
-	 * @exception
-	 * @return
-	 * @see
+	 * @param event
+	 * @exception IO exception
+	 * Sets items to a choice box and loads the practice tests for the F=ma exam
 	*/
 	@FXML
 	public void initialize(){
@@ -156,10 +155,9 @@ public class FmaViewController {
 	
 	//method which opens a webpage in a web view when the button called Learn is clicked
 	/**
-	 * @param
-	 * @exception
-	 * @return
-	 * @see
+	 * @param event
+	 * @exception IO exception
+	 * Loads the conceptual videos for the F=ma exam
 	*/
 	@FXML
 	public void handleVideos(){
@@ -170,10 +168,9 @@ public class FmaViewController {
 	
 	//method which opens a webpage in a web view when the button called Strategize is clicked
 	/**
-	 * @param
-	 * @exception
-	 * @return
-	 * @see
+	 * @param event
+	 * @exception IO exception
+	 * Loads the strategies for the F=ma exam
 	*/
 	@FXML
 	public void handleStrategy() {
